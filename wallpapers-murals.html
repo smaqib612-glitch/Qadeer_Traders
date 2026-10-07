@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wallpapers & Murals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #1d1d1d; background: #f5f1ea; }
+      a { text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      .navbar { position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #f7f1e5 0%, #e7d5a7 36%, #f4efe8 100%); backdrop-filter: blur(6px); box-shadow: 0 8px 22px rgba(73, 58, 30, 0.12); border-bottom: 1px solid rgba(118, 90, 46, 0.18); }
+      .nav-container { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+      .brand { display: inline-flex; align-items: center; font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 2vw, 2rem); letter-spacing: 0.12em; color: #1e1e1e; font-weight: 700; }
+      .brand-logo {
+        display: block;
+        width: clamp(210px, 20vw, 330px);
+        height: auto;
+        max-height: 90px;
+        object-fit: contain;
+        background: transparent;
+        filter: drop-shadow(0 8px 16px rgba(80, 62, 28, 0.15));
+      }
+      .nav-list { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 22px; }
+      .nav-item { position: relative; }
+      .nav-link, .dropdown-toggle { border: 0; background: transparent; color: #444; font-size: 0.96rem; font-weight: 600; font-family: 'Open Sans', Arial, sans-serif; padding: 8px 10px; cursor: pointer; }
+      .nav-link:hover, .dropdown-toggle:hover, .nav-link.active { color: #111; }
+      .dropdown { position: relative; }
+      .dropdown-menu { position: absolute; top: calc(100% + 10px); left: 0; min-width: 240px; background: #fff; border: 1px solid #ece5dd; border-radius: 10px; box-shadow: 0 14px 30px rgba(0,0,0,0.08); padding: 8px 0; display: none; list-style: none; }
+      .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { display: block; }
+      .dropdown-menu a { display: block; color: #444; padding: 10px 14px; font-size: 0.92rem; font-weight: 500; }
+      .dropdown-menu a:hover { background: #f7f3ee; color: #111; }
+      .page-header { max-width: 1200px; margin: 0 auto; padding: 34px 20px 10px; }
+      .breadcrumb { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; color: #6f6f6f; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; }
+      .breadcrumb a { color: #6f6f6f; }
+      .breadcrumb .sep { color: #b0a694; }
+      .breadcrumb .current { color: #1a1a1a; font-weight: 700; }
+      .page-title { margin: 12px 0 0; font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 3vw, 4rem); line-height: 1.1; color: #202020; }
+      .gallery-shell { max-width: 1200px; margin: 0 auto; padding: 16px 20px 64px; }
+      .gallery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+      .product-card { background: #fff; border: 1px solid #eae1d8; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(25, 22, 18, 0.08); transition: transform 0.28s ease, box-shadow 0.28s ease; }
+      .product-card:hover { transform: translateY(-6px); box-shadow: 0 18px 32px rgba(25, 22, 18, 0.12); }
+      .product-card img { width: 100%; aspect-ratio: 1.5 / 1; object-fit: cover; transition: transform 0.35s ease; }
+      .product-card:hover img { transform: scale(1.06); }
+      .product-card .info { padding: 16px 14px 18px; }
+      .product-card h3 { margin: 0; font-size: 1rem; font-weight: 600; color: #1d1d1d; text-align: center; }
+      @media (max-width: 980px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 640px) { .nav-container { flex-direction: column; align-items: flex-start; } .nav-list { flex-wrap: wrap; gap: 10px 14px; } .gallery-grid { grid-template-columns: 1fr; } }
+    </style>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive-nav.css" />
+    <link rel="stylesheet" href="product-detail.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand"><img src="image.png" alt="QADEER TRADERS" class="brand-logo"></a>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle" aria-expanded="false">Products ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="laminate-flooring.html">Laminate Wooden Flooring</a></li>
+                <li><a href="pvc-marble-sheets.html">PVC UV Marble Sheets</a></li>
+                <li><a href="wall-panels-pu-stone.html">Wall Panels &amp; PU Stone</a></li>
+                <li><a href="roller-blinds-smart-motors.html">Roller Blinds &amp; Smart Motors</a></li>
+                <li><a href="corian-vanities.html">Corian Vanities &amp; Tops</a></li>
+                <li><a href="custom-kitchens-wardrobes.html">Custom Kitchens &amp; Wardrobes</a></li>
+                <li><a href="wallpapers-murals.html" class="nav-link active">Wallpapers &amp; Murals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <a href="index.html">Products</a>
+          <span class="sep">/</span>
+          <span class="current">Wallpapers &amp; Murals</span>
+        </div>
+        <h1 class="page-title">Wallpapers &amp; Murals</h1>
+      </div>
+
+      <div class="gallery-shell">
+        <div class="gallery-grid">
+          <article class="product-card"><img src="a1.jpg" alt="Botanical Mist Wallpaper"><div class="info"><h3>Botanical Mist</h3></div></article>
+          <article class="product-card"><img src="A2.jpg" alt="Marble Whisper Wallpaper"><div class="info"><h3>Marble Whisper</h3></div></article>
+          <article class="product-card"><img src="A3.jpg" alt="Tropical Palm Wallpaper"><div class="info"><h3>Tropical Palm</h3></div></article>
+          <article class="product-card"><img src="A4.jpg" alt="Blush Bloom Wallpaper"><div class="info"><h3>Blush Bloom</h3></div></article>
+          <article class="product-card"><img src="A5.jpg" alt="Geometric Pearl Wallpaper"><div class="info"><h3>Geometric Pearl</h3></div></article>
+          <article class="product-card"><img src="A6.jpg" alt="Velvet Fern Wallpaper"><div class="info"><h3>Velvet Fern</h3></div></article>
+          <article class="product-card"><img src="A7.jpg" alt="Golden Arch Wallpaper"><div class="info"><h3>Golden Arch</h3></div></article>
+          <article class="product-card"><img src="A8.jpg" alt="Monochrome Line Wallpaper"><div class="info"><h3>Monochrome Line</h3></div></article>
+          <article class="product-card"><img src="A9.jpg" alt="Desert Wave Wallpaper"><div class="info"><h3>Desert Wave</h3></div></article>
+          <article class="product-card"><img src="A10.jpg" alt="Sage Garden Wallpaper"><div class="info"><h3>Sage Garden</h3></div></article>
+          <article class="product-card"><img src="A11.jpg" alt="Luxe Texture Wallpaper"><div class="info"><h3>Luxe Texture</h3></div></article>
+          <article class="product-card"><img src="A12.jpg" alt="Midnight Flora Wallpaper"><div class="info"><h3>Midnight Flora</h3></div></article>
+          <article class="product-card"><img src="A13.jpg" alt="Pearl Palm Wallpaper"><div class="info"><h3>Pearl Palm</h3></div></article>
+          <article class="product-card"><img src="A14.jpg" alt="Terrazzo Veil Wallpaper"><div class="info"><h3>Terrazzo Veil</h3></div></article>
+          <article class="product-card"><img src="A15.jpg" alt="Soft Horizon Wallpaper"><div class="info"><h3>Soft Horizon</h3></div></article>
+          <article class="product-card"><img src="A16.jpg" alt="Royal Botanica Wallpaper"><div class="info"><h3>Royal Botanica</h3></div></article>
+
+        </div>
+      </div>
+    </main>
+    <div data-site-footer></div><script src="footer.js"></script><script src="responsive-nav.js"></script><script src="product-detail.js"></script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qadeer Traders</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand"><img src="image.png" alt="QADEER TRADERS" class="brand-logo"></a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item hide-mobile"><a href="about-us.html">About Us</a></li>
+
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle" aria-expanded="false">
+                Products ▾
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="laminate-flooring.html">Laminate Wooden Flooring</a></li>
+                <li><a href="pvc-marble-sheets.html">PVC UV Marble Sheets</a></li>
+                <li><a href="wall-panels-pu-stone.html">Wall Panels &amp; PU Stone</a></li>
+                <li><a href="roller-blinds-smart-motors.html">Roller Blinds &amp; Smart Motors</a></li>
+                <li><a href="corian-vanities.html">Corian Vanities &amp; Tops</a></li>
+                <li><a href="custom-kitchens-wardrobes.html">Custom Kitchens &amp; Wardrobes</a></li>
+                <li><a href="wallpapers-murals.html">Wallpapers &amp; Murals</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="services.html">Services</a></li>
+            <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Mobile full-screen overlay menu (Dribbble-like) -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <button class="mobile-close" aria-label="Close menu">✕</button>
+
+        <a href="index.html" class="mobile-brand"><img src="image.png" alt="QADEER TRADERS" class="brand-logo"></a>
+
+        <ul class="mobile-menu-list">
+          <li class="mobile-item"><a href="index.html">Home</a></li>
+          <li class="mobile-item mobile-hide"><a href="about-us.html">About Us</a></li>
+
+          <li class="mobile-item mobile-accordion">
+            <button class="accordion-toggle">Products ▾</button>
+            <ul class="accordion-panel">
+              <li><a href="laminate-flooring.html">Laminate Wooden Flooring</a></li>
+              <li><a href="pvc-marble-sheets.html">PVC UV Marble Sheets</a></li>
+              <li><a href="wall-panels-pu-stone.html">Wall Panels &amp; PU Stone</a></li>
+              <li><a href="roller-blinds-smart-motors.html">Roller Blinds &amp; Smart Motors</a></li>
+              <li><a href="corian-vanities.html">Corian Vanities &amp; Tops</a></li>
+              <li><a href="custom-kitchens-wardrobes.html">Custom Kitchens &amp; Wardrobes</a></li>
+              <li><a href="wallpapers-murals.html">Wallpapers &amp; Murals</a></li>
+            </ul>
+          </li>
+
+          <li class="mobile-item"><a href="services.html">Services</a></li>
+          <li class="mobile-item"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+
+        <!-- CTA removed -->
+      </div>
+    </div>
+
+    <main class="content">
+      <div class="video-wrap">
+        <video autoplay muted playsinline preload="auto">
+          <source src="aqib.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <section class="about-section" id="about">
+        <div class="about-inner">
+          <span class="eyebrow">About Us</span>
+          <h2>Trusted Interior Surfaces for Every Project</h2>
+          <p>
+            Qadeer Traders delivers premium flooring, wall finishes, blinds, kitchen fittings, and murals across Pakistan.
+            We combine modern design, durable materials, and expert installation support for homes, offices and hospitality spaces.
+          </p>
+          <p>
+            Explore our curated product categories to find tailored solutions for residential, commercial, and luxury interior projects.
+          </p>
+          <a href="#products" class="button">View Categories</a>
+        </div>
+      </section>
+
+      <section class="category-overview" id="products">
+        <div class="overview-inner">
+          <div class="overview-head">
+            <span class="eyebrow">Our Categories</span>
+            <h2>Explore Product Collections</h2>
+          </div>
+          <div class="category-grid">
+            <article class="gallery-card category-card">
+              <a href="laminate-flooring.html">
+                <img src="pic.jpeg" alt="Laminate Wooden Flooring" />
+                <div class="gallery-caption"><h3>Laminate Wooden Flooring</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="pvc-marble-sheets.html">
+                <img src="pic71.webp" alt="PVC UV Marble Sheets" />
+                <div class="gallery-caption"><h3>PVC UV Marble Sheets</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="wall-panels-pu-stone.html">
+                <img src="pic2.jpeg" alt="Wall Panels & PU Stone" />
+                <div class="gallery-caption"><h3>Wall Panels &amp; PU Stone</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="roller-blinds-smart-motors.html">
+                <img src="pic3.jpeg" alt="Roller Blinds & Smart Motors" />
+                <div class="gallery-caption"><h3>Roller Blinds &amp; Smart Motors</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="corian-vanities.html">
+                <img src="pic4.jpeg" alt="Corian Vanities & Tops" />
+                <div class="gallery-caption"><h3>Corian Vanities &amp; Tops</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="custom-kitchens-wardrobes.html">
+                <img src="pic5.jpeg" alt="Custom Kitchens & Wardrobes" />
+                <div class="gallery-caption"><h3>Custom Kitchens &amp; Wardrobes</h3></div>
+              </a>
+            </article>
+            <article class="gallery-card category-card">
+              <a href="wallpapers-murals.html">
+                <img src="pic6.jpeg" alt="Wallpapers & Murals" />
+                <div class="gallery-caption"><h3>Wallpapers &amp; Murals</h3></div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-logo">QADEER TRADERS</div>
+        </div>
+
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="laminate-flooring.html">Laminate Wooden Flooring</a></li>
+              <li><a href="pvc-marble-sheets.html">PVC UV Marble Sheets</a></li>
+              <li><a href="wall-panels-pu-stone.html">Wall Panels &amp; PU Stone</a></li>
+              <li><a href="roller-blinds-smart-motors.html">Roller Blinds &amp; Smart Motors</a></li>
+              <li><a href="corian-vanities.html">Corian Vanities &amp; Tops</a></li>
+              <li><a href="custom-kitchens-wardrobes.html">Custom Kitchens &amp; Wardrobes</a></li>
+              <li><a href="wallpapers-murals.html">Wallpapers &amp; Murals</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col newsletter">
+            <h4>Join Our Mailing List</h4>
+            <form class="newsletter-form" action="#">
+              <input
+                type="email"
+                name="subscriberEmail"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+              />
+              <button type="submit">Submit</button>
+            </form>
+
+            <div class="follow">
+              <h5>Follow</h5>
+              <div class="socials social-icons">
+                <a
+                  href="https://wa.me/923054003812"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/share/14rVFrcAW6p/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/qadeer_traders?igsh=NThneWZia2JzeDB6"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@syedahsan12145?_r=1&amp;_t=ZS-99mDiMKHrJX"
+                  target="_blank"
+                  aria-label="TikTok"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 QADEER TRADERS. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        const navToggle = document.querySelector(".nav-toggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileClose = document.querySelector(".mobile-close");
+
+        function openMobile() {
+          mobileMenu.classList.add("open");
+          mobileMenu.setAttribute("aria-hidden", "false");
+          document.body.classList.add("no-scroll");
+          if (navToggle) navToggle.setAttribute("aria-expanded", "true");
+        }
+
+        function closeMobile() {
+          mobileMenu.classList.remove("open");
+          mobileMenu.setAttribute("aria-hidden", "true");
+          document.body.classList.remove("no-scroll");
+          if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+        }
+
+        if (navToggle && mobileMenu) {
+          navToggle.addEventListener("click", openMobile);
+        }
+        if (mobileClose) mobileClose.addEventListener("click", closeMobile);
+
+        // Close overlay when clicking the backdrop
+        mobileMenu.addEventListener("click", (e) => {
+          if (e.target === mobileMenu) closeMobile();
+        });
+
+        // Accordion behavior inside mobile overlay
+        document.querySelectorAll(".accordion-toggle").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const panel = this.nextElementSibling;
+            const isOpen = panel.style.display === "block";
+            document
+              .querySelectorAll(".accordion-panel")
+              .forEach((p) => (p.style.display = "none"));
+            if (!isOpen) panel.style.display = "block";
+          });
+        });
+
+        // Keep desktop dropdowns working as before
+        document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            const parent = this.parentElement;
+            const expanded = parent.classList.toggle("open");
+            this.setAttribute("aria-expanded", expanded);
+          });
+        });
+
+        // Close dropdowns when clicking outside (desktop)
+        document.addEventListener("click", (e) => {
+          if (!e.target.closest(".nav")) {
+            document
+              .querySelectorAll(".dropdown.open")
+              .forEach((d) => d.classList.remove("open"));
+            document
+              .querySelectorAll('.dropdown-toggle[aria-expanded="true"]')
+              .forEach((t) => t.setAttribute("aria-expanded", "false"));
+          }
+        });
+
+        // Close mobile overlay if resizing to desktop
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 900) closeMobile();
+        });
+      })();
+    </script>
+    <script src="footer.js"></script>
+  </body>
+</html>

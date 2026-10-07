@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Qadeer Traders for interior surfaces, blinds, wallpapers, kitchens and wardrobes." />
+    <title>Contact Us | Qadeer Traders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="footer.css" /><link rel="stylesheet" href="responsive-nav.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body class="inner-page">
+    <header class="navbar"><div class="nav-container"><a href="index.html" class="brand"><img src="image.png" alt="QADEER TRADERS" class="brand-logo" /></a><nav class="nav" aria-label="Main navigation"><ul class="nav-list"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li><li class="nav-item dropdown"><button class="dropdown-toggle" aria-expanded="false">Products ▾</button><ul class="dropdown-menu"><li><a href="laminate-flooring.html">Laminate Wooden Flooring</a></li><li><a href="pvc-marble-sheets.html">PVC UV Marble Sheets</a></li><li><a href="wall-panels-pu-stone.html">Wall Panels &amp; PU Stone</a></li><li><a href="roller-blinds-smart-motors.html">Roller Blinds &amp; Smart Motors</a></li><li><a href="corian-vanities.html">Corian Vanities &amp; Tops</a></li><li><a href="custom-kitchens-wardrobes.html">Custom Kitchens &amp; Wardrobes</a></li><li><a href="wallpapers-murals.html">Wallpapers &amp; Murals</a></li></ul></li><li class="nav-item"><a href="services.html" class="nav-link">Services</a></li><li class="nav-item"><a href="contact-us.html" class="nav-link active">Contact Us</a></li></ul></nav></div></header>
+    <main><section class="inner-hero" style="background-image:url('pic2.jpeg')"><div class="inner-hero-content"><p class="eyebrow">Start a Conversation</p><h1>Let's Plan Your Space</h1><p>Share a few details about your project and the products you are considering.</p></div></section>
+      <section class="inner-section"><div class="contact-layout"><aside class="contact-panel"><h2>Contact Information</h2><a class="contact-detail" href="tel:+923054003812"><strong>Phone</strong>+92 305 4003812<br />Syed Ahsan Naqvi</a><a class="contact-detail" href="tel:+923334596121"><strong>Contact</strong>+92 333 4596121<br />Farhan Mughal</a><a class="contact-detail" href="mailto:ahsannaqvi1122@gmail.com"><strong>Email</strong>ahsannaqvi1122@gmail.com</a><p class="contact-detail"><strong>Address:</strong>Building No. 216, Askari Bank, 1st Floor, FF, Phase 4, DHA Lahore</p></aside><div class="contact-panel"><h2>Tell Us About Your Project</h2><form class="contact-form" id="enquiryForm"><label>Name<input type="text" name="name" autocomplete="name" required /></label><label>Email<input type="email" name="email" autocomplete="email" required /></label><label>Phone<input type="tel" name="phone" autocomplete="tel" /></label><label>Service<select name="service"><option value="">Select a service</option><option>PVC UV Marble Sheets</option><option>Wall Panels &amp; PU Stone</option><option>Roller Blinds &amp; Smart Motors</option><option>Wallpapers &amp; Murals</option><option>Corian Vanities &amp; Tops</option><option>Custom Kitchens &amp; Wardrobes</option></select></label><label>Message<textarea name="message" required></textarea></label><button class="page-button" type="submit">Submit Enquiry</button></form></div></div></section>
+      <section class="inner-cta"><h2>Ready to Talk?</h2><p>Call us directly or send your project details through the form above.</p><a class="page-button" href="tel:+923054003812">Call +92 305 4003812</a></section></main>
+    <div data-site-footer></div><script src="footer.js"></script><script src="responsive-nav.js"></script>
+    <script>
+      document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const enquiry = [
+          "New Customer Enquiry",
+          "Name: " + formData.get("name"),
+          "Customer Email: " + formData.get("email"),
+          "Phone: " + (formData.get("phone") || "Not provided"),
+          "Service: " + (formData.get("service") || "Not selected"),
+          "Message: " + formData.get("message")
+        ].join("\n");
+        const encodedEnquiry = encodeURIComponent(enquiry);
+        window.open("https://wa.me/923054003812?text=" + encodedEnquiry, "_blank");
+        window.location.href = "mailto:ahsannaqvi1122@gmail.com?subject=" + encodeURIComponent("New Customer Enquiry") + "&body=" + encodedEnquiry;
+      });
+    </script>
+  </body>
+</html>

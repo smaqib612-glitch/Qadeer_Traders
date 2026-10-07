@@ -1,0 +1,28 @@
+.site-footer { background: #f7f5f2; color: #2b2b2b; padding:30px 0 40px; border-top:1px solid #e6e6e6; }
+.footer-inner { max-width:1100px; margin:0 auto; padding:0 20px; }
+.footer-top { padding-bottom:12px; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size:22px; letter-spacing:4px; color:#2b2b2b; text-align:left; }
+.footer-row { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; padding-top:12px; }
+.footer-col h4 { margin:0 0 10px 0; font-weight:600; color:#2b2b2b; }
+.footer-col ul { list-style:none; padding:0; margin:0; }
+.footer-col li { margin:8px 0; }
+.footer-col a { color:#666; text-decoration:none; font-size:14px; }
+.footer-col a:hover { color:#222; }
+.newsletter-form { display:flex; gap:8px; margin-top:6px; }
+.newsletter-form input { flex:1; padding:8px 10px; border:1px solid #d6d6d6; border-right:0; font-size:14px; }
+.newsletter-form button { background:#c89b2e; color:#fff; border:0; padding:8px 12px; cursor:pointer; font-weight:600; }
+.newsletter-form button:hover { background:#b58920; }
+.follow { margin-top:12px; }
+.socials a { display:inline-block; width:36px; height:36px; line-height:36px; text-align:center; border-radius:50%; background:#fff; color:#666; margin-right:8px; text-decoration:none; font-size:12px; border:1px solid #ececec; }
+.socials a svg { width:18px; height:18px; vertical-align:middle; fill:#666; }
+.socials a:hover svg { fill:#2b2b2b; }
+.social-icons { display: flex; gap: 20px; }
+.social-icons a { font-size: 35px; text-decoration: none; color: #333; transition: 0.3s; display:inline-flex; align-items:center; justify-content:center; }
+.social-icons a:hover { transform: scale(1.2); }
+.social-icons .fa-whatsapp { color: #25D366; }
+.social-icons .fa-facebook { color: #1877F2; }
+.social-icons .fa-instagram { color: #E4405F; }
+.social-icons .fa-tiktok { color: #000000; }
+.footer-bottom { border-top:1px solid #ececec; margin-top:18px; padding-top:12px; text-align:left; color:#777; font-size:13px; }
+@media (max-width:900px) { .footer-row { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .footer-row { grid-template-columns:1fr; } .footer-logo { text-align:left; } .footer-col { text-align:left; } .footer-bottom { text-align:left; } .newsletter-form { justify-content:flex-start; } }
