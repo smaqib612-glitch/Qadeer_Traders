@@ -3,7 +3,7 @@ document.querySelectorAll("[data-site-footer]").forEach((placeholder) => {
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-top">
-          <div class="footer-logo">QADEER TRADERS</div>
+          <div class="footer-logo">Al Qadeer Trader</div>
         </div>
 
         <div class="footer-row">
@@ -50,7 +50,7 @@ document.querySelectorAll("[data-site-footer]").forEach((placeholder) => {
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2026 QADEER TRADERS. All rights reserved.</p>
+          <p>&copy; 2026 Al Qadeer Trader. All rights reserved.</p>
         </div>
       </div>
     </footer>`;
