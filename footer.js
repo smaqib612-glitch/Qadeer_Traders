@@ -62,7 +62,7 @@ document.querySelectorAll(".newsletter-form").forEach((form) => {
     const email = form.elements.subscriberEmail.value.trim();
     const subject = encodeURIComponent("Mailing List Subscription Request");
     const body = encodeURIComponent(
-      "Please add this email address to the Qadeer Traders mailing list:\n\n" + email
+      "Please add this email address to the Al Qadeer Trader mailing list:\n\n" + email
     );
     window.location.href =
       "mailto:ahsannaqvi1122@gmail.com?subject=" + subject + "&body=" + body;

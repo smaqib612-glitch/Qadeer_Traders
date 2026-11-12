@@ -32,8 +32,8 @@
 
   const pageTitle = document.querySelector(".page-title")?.textContent.trim() || "Product";
   const pageDetails = productPages[pageTitle] || {
-    eyebrow: "Qadeer Traders Collection",
-    description: "A carefully selected interior finish from the Qadeer Traders collection, chosen to bring lasting style and character to your space."
+    eyebrow: "Al Qadeer Trader Collection",
+    description: "A carefully selected interior finish from the Al Qadeer Trader collection, chosen to bring lasting style and character to your space."
   };
 
   const modal = document.createElement("div");
